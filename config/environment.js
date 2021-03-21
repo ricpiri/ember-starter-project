@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: "ember-starter-project",
+    modulePrefix: "expert-advice-project",
     environment,
     rootURL: "/",
     locationType: "auto",
@@ -49,7 +49,7 @@ module.exports = function(environment) {
   }
 
   if (environment === "production") {
-    // here you can enable a production-specific feature
+    ENV.serverURL = "https://expert-advice-master-api.herokuapp.com/";
   }
 
   ENV.apiBaseURL = ENV.serverURL + "/" + ENV.apiNamespace;

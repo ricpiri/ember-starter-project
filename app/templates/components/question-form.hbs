@@ -1,0 +1,27 @@
+<BsForm @formLayout="vertical"
+        @disabled={{saveQuestion.isRunning}}
+        @model={{question}}
+        @onSubmit={{perform saveQuestion}} as |form|>
+    <form.element 
+        @controlType="text" 
+        @label="Title" 
+        @placeholder="Title" 
+        @property="title" 
+        @required={{true}} />
+    <form.element 
+        @controlType="textarea"
+        @label="Description"
+        @placeholder="Description"
+        @property="description"
+        @required={{true}} />
+    <form.element
+        @controlType="text"
+        @label="Tags (Separatedby comma)"
+        @property="tags"
+        @required={{true}} />
+    <BsButton 
+        @type="primary"
+        @buttonType="submit"
+        @defaultText={{saveButtonText}}
+        class="question-form__submit" />
+</BsForm>

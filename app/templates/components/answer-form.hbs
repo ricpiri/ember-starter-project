@@ -1,0 +1,6 @@
+<BsForm @formLayout="vertical" @disabled={{saveAnswer.isRunning}} @model={{answer}} @onSubmit={{perform
+    saveAnswer}} as |form|>
+    <form.element @controlType="textarea" @label="Body" @property="body"
+        @required={{true}} />
+    <BsButton @type="primary" @buttonType="submit" @defaultText={{"Post an answer"}}/>
+</BsForm>
