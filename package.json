@@ -60,7 +60,7 @@
     "sass": "^1.14.1"
   },
   "engines": {
-    "node": "6.* || 8.* || >= 10.*"
+    "node": "10.19.0"
   },
   "resolutions": {
     "ember-cli-addon-docs/ember-fetch/whatwg-fetch": "3.3.1"
